@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    border: none;
+}
+
+body {
+  width: 100%;
+}
+.mask {
+    margin: 0 0 0 30px;
+}
+/* header work------------------------------------------------------------------------------ */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 80px;  /* top and botton 20px and left and right is 80p */
+    background: white;
+    box-shadow: 0 3px 15px;
+    z-index: 999;
+    position: sticky ;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.navbar li a:hover,
+.navbar li a.active
+{
+    color: aqua;
+}
+.navbar li a.active::after,
+.navbar li a:hover::after
+
+{
+    content: '';
+    width: 30%;
+    height: 2px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;,
+}
+
+
+/* main body work ------------------------------------------------------------------------------- */
+
+.hero{
+    background-image: url("git - img/img/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero h4{
+    padding-bottom: 15px;
+}
+.hero h1{
+    color: blue;
+}
+
+.hero button{
+    background-image: url("git - img/img/button.png");
+    background-color: transparent;
+    color: aqua;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* -------------------------------feature */
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .feature .fe-box{
+ width: 180px;
+ text-align: center;
+ padding: 25px 15px;
+ box-shadow: 20px 20px 34px;
+ border: 1px solid black;
+ border-radius: 4px;
+ margin: 15px 0;
+ transition: 0.2s ease;
+ }
+
+ .feature .fe-box:hover{
+    box-shadow: 10px 10px 54px;
+ }
+
+ .feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+ }
+
+ .feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: rgb(133, 198, 255);
+ }
+
+#product1{
+    text-align: center;
+
+}
+
+.fck {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#product1 .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px;
+    border-radius: 25px;
+    margin: 15px 0;
+
+}
+#product1 .pro:hover{
+    box-shadow: 10px 10px 54px;
+
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product .pro .des h5 {
+    padding: 7px;
+    color: #465b52;
+    font-size: 12px;
+}
+.star i {
+    color: gold;
+}
+
+/* banner */
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("git - img/img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: aliceblue;
+    font-size: 16px;
+}
+#banner h2 {
+    color: aliceblue;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: red;
+}
+
+#banner button:hover {
+    background: #465b52;
+    color: white;
+}
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("git - img/img/banner/b17.jpg");
+    min-width: 580px;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 21px;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.btn1:hover{
+    background-color: #465b52;
+    color: rgb(255, 255, 255);
+}
